@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abel EGBOHOU Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/20c35d4329.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+
+    <div id="header">
+         <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Accueil</a></li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Mes projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Dévéloppeur mobile,</p>
+                <h1>Je suis <span>Abel</span><br>Egbohou depuis<br> le Togo</h1>
+            </div>
+         </div>
+    </div>
+    <!-- -------------------------About---------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about_me.png" alt="user image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">A propos</h1>
+                    <p>Après l'obtention de mon baccalauréat série C Mathématiques et à la fin de mon cursus urniversitaire en licence de mathématiques et informatique appliquée, j'ai entamé une série d'études d'approfondissement en programmation en autodidacte. 
+Après les langages web HTML5; CSS;  JavaScript et PHP, j'ai approfondie ma connaissance du langage Java et des bases de données relationnelles en SQL. 
+Fort de tous ces connaisances j'ai débuté le développement natif sous Android avec Java ensuite avec le langage Kotlin, langage de référence dans ce domaine actuellement. J'ai ainsi mené à bien plusieurs projets dont deux qui sont l'application de culture générale Quizzie et un lecteur multimedia Shine Player. 
+Ensuite je me suis interessé au développement hybride avec Ionic et actuellement avec Flutter qui pour moi est le meilleur framework dans ce domaine. Et avec ce dernier j'ai dévéloppé un jeu mobile qui reprends assez fidèlement le jeu télévisé "Des Chiffres et des Lettres" de France 3.
+Ainsi depuis plus de trois ans, je fais du développement mobile avec Android (avec les librairies Jetpack et Compose) et Flutter.  Je maîtrise désormais plusieurs langages,  en occurrence Java,  Kotlin,  Dart,  Python, JavaScript etc. J'ai pu apprendre plusieurs outils de dévéloppement ou framework notamment Spring Boot avec Java pour la création d'APIs et de microservices.
+Depuis plusieurs années désormais le développement mobile est ma principale préoccupation et ainsi je suis amplement disposé à mettre tout en œuvre pour mener à bien tout projet mobile... </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Compétences</p>
+                        <p class="tab-links" onclick="opentab('experience')">Expérience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>2022 - current </span><br>Développement mobile natif et hybride avec Flutter, conception d'APIs et microservices avec Spring Boot.</li>
+                            <li><span>2021 - 2022 </span><br>Développement d'applis hybrides Android/IOS avec Flutter.</li>
+                            <li><span>2020 - 2021</span><br>Développement d'applications natifs sous Android avec Kotlin.</li>
+                            <li><span>2019 - 2020</span><br>Conception de sites web complets avec le HTML5, CSS, JavaScript et PHP.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Développement natif sous Android</span><br>J'ai développé deux applications natifs sous Android, Quizzie une appli de culture générale et Shine Player un lecteur multimedia, disponibles sur le Play store.</li>
+                            <li><span>Dévéloppement d'applications Flutter</span><br>Création et développement de deux applications Flutter "Custom Wallpaper" et DCDL un jeu, tous disponibles sur le Play store.</li>
+                            <li><span>Développement d'APIs et de Microservices</span><br>J'ai eu à développer des APIs et des microservices pour les besions de mes applis avec Spring Boot java et Python.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Licence en Mathématiques et Informatique.</li>
+                            <li><span>2016</span><br>Baccalauréat scientifique (Mathématiques et Sciences physiques).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------Services ------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Mes services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Développer des<br> applis Android</h2>
+                    <p>Je dévéloppe des applications Android nativement avec Kotlin. Des idées de bases, jusqu'à la réalisation effective du projet, la structuration, l'architectcure et les tests, tout ce qui est nécessaire pour mettre en place une application natif de qualité et parfaitement fonctionnel.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Développer des<br> applis hybrides avec Flutter</h2>
+                    <p>Je développe des applications hybrides avec le framework Flutter de Google. Créer une appli fonctionable sur IOS et Android, à partir de zéro des idéés jusqu'à la conception finale de l'application. S'adapter en fonction des besoins du projet et concevoir l'application la plus convenable possible.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Mettre en place des APIs et des microservices </h2>
+                    <p>Je développe des APIs et des microservices complets avec des tests et une structuration professionnel avec notamment le framework java, Spring Boot et également avec Python.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------- Portfolio ----------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mes projets</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/quizzie.png" alt="work-1">
+                    <div class="layer">
+                        <div class="layer">
+                            <h3>Quizzie</h3>
+                        <p>Une appli de culture générale avec des classements, des statistques, des défis, tout à fait inédites, pour améliorer éffectivement votre culture général.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.mawuvidev.quizzie" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/dcdl.png" alt="work-2">
+                    <div class="layer">
+                        <h3>DCDL</h3>
+                    <p>Une appli qui imite le jeu télévisé de France 3 "Des Chiffres et Des Lettres", du sésame aux mots de la fin. Vous pouvez même nous envoyer vos duels comme dans le jeu.
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.mawuvidev.dcdl" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Shineplayer.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Shine Player</h3>
+                    <p>Un lecteur multimedia, audios et videos. Pour lire vos audios, vos vidéos, créer des playlists, cachez certains vidéos ou audios grace à notre private zone; vous pouvez enregistrer des audios et streamer du contenu audio grâce a l'API de Deezer.
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.mawuvidev.shineplayer" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/custom_wallpaper.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Custom Wallpaper</h3>
+                    <p>Une application pour changer vos fonds d'écrans selon le moment de la journée. Il vous permet également d'ajouter des légendes à vos images, récupérer des images de unsplash.com et les utiliser comme fond d'écran ou les télécharger etc.
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.mawuvidev.custom_wallpaper" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <!-- -----------------Contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contacts</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mawulifreelance@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0022891635712</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/mawuvidevs"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <!--<a href="images/cv.pdf" download="abel_cv" class = "btn btn2" >Télécharger mon CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" required placeholder="Votre nom">
+                        <input type="email" name="Email" required placeholder="Votre Email">
+                        <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
+                        <button type="submit" class="btn btn2">Soumettre</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Abel. Réalisé par <i class="fa-solid fa-heart"></i> Easy Tutorials</p>
+        </div>
+    </div>
+
+
+    <!-- -------------------JS Script------------------------ -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwtQzaVPeZ4p_t3hsFl3DyMxKpcaV4Z_lGxTsjk4aRA5z1WbMWkxATRn5Ara3RStaiOvw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
